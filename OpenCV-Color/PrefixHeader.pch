@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  OpenCV-Color
+//
+//  Created by 阮巧华 on 2019/12/9.
+//  Copyright © 2019 阮巧华. All rights reserved.
+//
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

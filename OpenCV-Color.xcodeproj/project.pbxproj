@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7B9470E157EC2273E0F71D9 /* Pods_OpenCV_Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B613F0B77C0B5DE1C11ABA /* Pods_OpenCV_Color.framework */; };
+		F1BF8FD0239DE1DC003B9DFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF8FCF239DE1DC003B9DFA /* AppDelegate.m */; };
+		F1BF8FD3239DE1DC003B9DFA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF8FD2239DE1DC003B9DFA /* SceneDelegate.m */; };
+		F1BF8FD6239DE1DC003B9DFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF8FD5239DE1DC003B9DFA /* ViewController.m */; };
+		F1BF8FD9239DE1DC003B9DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BF8FD7239DE1DC003B9DFA /* Main.storyboard */; };
+		F1BF8FDB239DE1DE003B9DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1BF8FDA239DE1DE003B9DFA /* Assets.xcassets */; };
+		F1BF8FDE239DE1DE003B9DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BF8FDC239DE1DE003B9DFA /* LaunchScreen.storyboard */; };
+		F1BF8FE1239DE1DE003B9DFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF8FE0239DE1DE003B9DFA /* main.m */; };
+		F1BF8FE9239DF4AD003B9DFA /* OpenCVImageTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = F1BF8FE7239DF4AD003B9DFA /* OpenCVImageTool.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E4DD347F7F320B8382FDB98 /* Pods-OpenCV-Color.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV-Color.release.xcconfig"; path = "Target Support Files/Pods-OpenCV-Color/Pods-OpenCV-Color.release.xcconfig"; sourceTree = "<group>"; };
+		32B613F0B77C0B5DE1C11ABA /* Pods_OpenCV_Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenCV_Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		898099EE6847A39D899F9F4D /* Pods-OpenCV-Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV-Color.debug.xcconfig"; path = "Target Support Files/Pods-OpenCV-Color/Pods-OpenCV-Color.debug.xcconfig"; sourceTree = "<group>"; };
+		F1BF8FCB239DE1DC003B9DFA /* OpenCV-Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCV-Color.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1BF8FCE239DE1DC003B9DFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1BF8FCF239DE1DC003B9DFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1BF8FD1239DE1DC003B9DFA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		F1BF8FD2239DE1DC003B9DFA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		F1BF8FD4239DE1DC003B9DFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1BF8FD5239DE1DC003B9DFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1BF8FD8239DE1DC003B9DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1BF8FDA239DE1DE003B9DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1BF8FDD239DE1DE003B9DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1BF8FDF239DE1DE003B9DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1BF8FE0239DE1DE003B9DFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1BF8FE7239DF4AD003B9DFA /* OpenCVImageTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVImageTool.mm; sourceTree = "<group>"; };
+		F1BF8FE8239DF4AD003B9DFA /* OpenCVImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVImageTool.h; sourceTree = "<group>"; };
+		F1BF8FEA239DF541003B9DFA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1BF8FC8239DE1DC003B9DFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B9470E157EC2273E0F71D9 /* Pods_OpenCV_Color.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B96332BB145B988299BECCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32B613F0B77C0B5DE1C11ABA /* Pods_OpenCV_Color.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCC46E9EFB674B866929283D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				898099EE6847A39D899F9F4D /* Pods-OpenCV-Color.debug.xcconfig */,
+				2E4DD347F7F320B8382FDB98 /* Pods-OpenCV-Color.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1BF8FC2239DE1DC003B9DFA = {
+			isa = PBXGroup;
+			children = (
+				F1BF8FCD239DE1DC003B9DFA /* OpenCV-Color */,
+				F1BF8FCC239DE1DC003B9DFA /* Products */,
+				CCC46E9EFB674B866929283D /* Pods */,
+				4B96332BB145B988299BECCB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1BF8FCC239DE1DC003B9DFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF8FCB239DE1DC003B9DFA /* OpenCV-Color.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1BF8FCD239DE1DC003B9DFA /* OpenCV-Color */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF8FE8239DF4AD003B9DFA /* OpenCVImageTool.h */,
+				F1BF8FE7239DF4AD003B9DFA /* OpenCVImageTool.mm */,
+				F1BF8FCE239DE1DC003B9DFA /* AppDelegate.h */,
+				F1BF8FCF239DE1DC003B9DFA /* AppDelegate.m */,
+				F1BF8FD1239DE1DC003B9DFA /* SceneDelegate.h */,
+				F1BF8FD2239DE1DC003B9DFA /* SceneDelegate.m */,
+				F1BF8FD4239DE1DC003B9DFA /* ViewController.h */,
+				F1BF8FD5239DE1DC003B9DFA /* ViewController.m */,
+				F1BF8FD7239DE1DC003B9DFA /* Main.storyboard */,
+				F1BF8FDA239DE1DE003B9DFA /* Assets.xcassets */,
+				F1BF8FDC239DE1DE003B9DFA /* LaunchScreen.storyboard */,
+				F1BF8FDF239DE1DE003B9DFA /* Info.plist */,
+				F1BF8FE0239DE1DE003B9DFA /* main.m */,
+				F1BF8FEA239DF541003B9DFA /* PrefixHeader.pch */,
+			);
+			path = "OpenCV-Color";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1BF8FCA239DE1DC003B9DFA /* OpenCV-Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1BF8FE4239DE1DE003B9DFA /* Build configuration list for PBXNativeTarget "OpenCV-Color" */;
+			buildPhases = (
+				C2343D7C9552EA71AD4E7331 /* [CP] Check Pods Manifest.lock */,
+				F1BF8FC7239DE1DC003B9DFA /* Sources */,
+				F1BF8FC8239DE1DC003B9DFA /* Frameworks */,
+				F1BF8FC9239DE1DC003B9DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCV-Color";
+			productName = "OpenCV-Color";
+			productReference = F1BF8FCB239DE1DC003B9DFA /* OpenCV-Color.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1BF8FC3239DE1DC003B9DFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "阮巧华";
+				TargetAttributes = {
+					F1BF8FCA239DE1DC003B9DFA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F1BF8FC6239DE1DC003B9DFA /* Build configuration list for PBXProject "OpenCV-Color" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1BF8FC2239DE1DC003B9DFA;
+			productRefGroup = F1BF8FCC239DE1DC003B9DFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1BF8FCA239DE1DC003B9DFA /* OpenCV-Color */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1BF8FC9239DE1DC003B9DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BF8FDE239DE1DE003B9DFA /* LaunchScreen.storyboard in Resources */,
+				F1BF8FDB239DE1DE003B9DFA /* Assets.xcassets in Resources */,
+				F1BF8FD9239DE1DC003B9DFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2343D7C9552EA71AD4E7331 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCV-Color-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1BF8FC7239DE1DC003B9DFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BF8FE9239DF4AD003B9DFA /* OpenCVImageTool.mm in Sources */,
+				F1BF8FD6239DE1DC003B9DFA /* ViewController.m in Sources */,
+				F1BF8FD0239DE1DC003B9DFA /* AppDelegate.m in Sources */,
+				F1BF8FE1239DE1DE003B9DFA /* main.m in Sources */,
+				F1BF8FD3239DE1DC003B9DFA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1BF8FD7239DE1DC003B9DFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1BF8FD8239DE1DC003B9DFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1BF8FDC239DE1DE003B9DFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1BF8FDD239DE1DE003B9DFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1BF8FE2239DE1DE003B9DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1BF8FE3239DE1DE003B9DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1BF8FE5239DE1DE003B9DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898099EE6847A39D899F9F4D /* Pods-OpenCV-Color.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
+				INFOPLIST_FILE = "OpenCV-Color/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ruanqiaohua.com.OpenCV-Color";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		F1BF8FE6239DE1DE003B9DFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E4DD347F7F320B8382FDB98 /* Pods-OpenCV-Color.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
+				INFOPLIST_FILE = "OpenCV-Color/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ruanqiaohua.com.OpenCV-Color";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1BF8FC6239DE1DC003B9DFA /* Build configuration list for PBXProject "OpenCV-Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1BF8FE2239DE1DE003B9DFA /* Debug */,
+				F1BF8FE3239DE1DE003B9DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1BF8FE4239DE1DE003B9DFA /* Build configuration list for PBXNativeTarget "OpenCV-Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1BF8FE5239DE1DE003B9DFA /* Debug */,
+				F1BF8FE6239DE1DE003B9DFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1BF8FC3239DE1DC003B9DFA /* Project object */;
+}
