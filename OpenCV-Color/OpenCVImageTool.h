@@ -16,8 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (CGFloat)getTextPhotoAngle:(UIImage *)image;
 /// 获取旋转后图片
 + (UIImage *)getRotateImage:(UIImage *)image degree:(CGFloat)degree;
-/// 获取二值化图片
-+ (UIImage *)getBinImage:(UIImage *)originImage;
+/// 获取灰色图片
++ (UIImage *)getGrayImage:(UIImage *)originImage;
+/// 获取黑白图片
++ (UIImage *)getBlackWhiteImage:(UIImage *)originImage;
 /// 去红后的照片
 + (UIImage *)repayRedImage:(UIImage *)image;
 /// 去蓝后的照片

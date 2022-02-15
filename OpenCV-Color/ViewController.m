@@ -52,6 +52,22 @@
     _outputImageView.image = image;
 }
 
+- (IBAction)grayButtonAction:(UIButton *)sender {
+    
+    if (!_inputImageView.image) return;
+
+    UIImage *image = [OpenCVImageTool getGrayImage:_inputImageView.image];
+    _outputImageView.image = image;
+}
+
+- (IBAction)blackWhiteButtonAction:(UIButton *)sender {
+    
+    if (!_inputImageView.image) return;
+
+    UIImage *image = [OpenCVImageTool getBlackWhiteImage:_inputImageView.image];
+    _outputImageView.image = image;
+}
+
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {

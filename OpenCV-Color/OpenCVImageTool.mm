@@ -54,15 +54,26 @@ using namespace cv;
     
     return newImage;
 }
-/// 获取二值化图片
-+ (UIImage *)getBinImage:(UIImage *)originImage {
+
+/// 获取灰色图片
++ (UIImage *)getGrayImage:(UIImage *)originImage {
     
     Mat img, grayImg, binImg;
     UIImageToMat(originImage, img);
     //灰度化
     cvtColor(img, grayImg, CV_BGR2GRAY);
-    //二值化
-    threshold(grayImg, binImg, 127, 255, CV_THRESH_BINARY);
+    return MatToUIImage(grayImg);
+}
+
+/// 获取黑白图片
++ (UIImage *)getBlackWhiteImage:(UIImage *)originImage {
+    
+    Mat img, grayImg, binImg;
+    UIImageToMat(originImage, img);
+    // 灰度化
+    cvtColor(img, grayImg, CV_BGR2GRAY);
+    // 黑白
+    threshold(grayImg, binImg, 128, 255, CV_THRESH_BINARY);
     return MatToUIImage(binImg);
 }
 //度数转换
