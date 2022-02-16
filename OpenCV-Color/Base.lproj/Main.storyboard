@@ -53,7 +53,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="LqQ-xd-KYn"/>
                                             <constraint firstAttribute="height" constant="50" id="x8t-DQ-LI5"/>
                                         </constraints>
-                                        <state key="normal" title="去红">
+                                        <state key="normal" title="增亮">
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                         <connections>
@@ -66,7 +66,7 @@
                                             <constraint firstAttribute="height" constant="50" id="W9b-cI-BEL"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="j2n-1O-JmN"/>
                                         </constraints>
-                                        <state key="normal" title="去蓝">
+                                        <state key="normal" title="对比度">
                                             <color key="titleColor" systemColor="systemBlueColor"/>
                                         </state>
                                         <connections>

@@ -24,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)repayRedImage:(UIImage *)image;
 /// 去蓝后的照片
 + (UIImage *)repayBuleImage:(UIImage *)image;
+/// 增亮
++ (UIImage *)addLightImage:(UIImage *)originImage;
+/// 对比度
++ (UIImage *)addHstackImage:(UIImage *)originImage;
 
 @end
 

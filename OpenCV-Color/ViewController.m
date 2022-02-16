@@ -40,7 +40,7 @@
     
     if (!_inputImageView.image) return;
 
-    UIImage *image = [OpenCVImageTool repayRedImage:_inputImageView.image];
+    UIImage *image = [OpenCVImageTool addLightImage:_inputImageView.image];
     _outputImageView.image = image;
 }
 
@@ -48,7 +48,7 @@
     
     if (!_inputImageView.image) return;
 
-    UIImage *image = [OpenCVImageTool repayBuleImage:_inputImageView.image];
+    UIImage *image = [OpenCVImageTool addHstackImage:_inputImageView.image];
     _outputImageView.image = image;
 }
 

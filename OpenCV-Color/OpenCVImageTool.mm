@@ -76,6 +76,40 @@ using namespace cv;
     threshold(grayImg, binImg, 128, 255, CV_THRESH_BINARY);
     return MatToUIImage(binImg);
 }
+
++ (UIImage *)addLightImage:(UIImage *)originImage {
+    
+    Mat img, dst;
+    UIImageToMat(originImage, img);
+    
+    add(img, img, dst);
+    return MatToUIImage(dst);
+}
+
+/// 对比度
++ (UIImage *)addHstackImage:(UIImage *)originImage {
+    
+    Mat img, grayImg, res;
+    UIImageToMat(originImage, img);
+    
+    // 灰度化
+    cvtColor(img, grayImg, CV_BGR2YCrCb);
+
+    vector<Mat> channels;
+    split(grayImg, channels);
+
+    // 直方图均衡化
+    equalizeHist(channels[0], channels[0]);
+
+    // 合并
+    merge(channels, grayImg);
+    
+    // 彩色
+    cvtColor(grayImg, res, CV_YCrCb2BGR);
+
+    return MatToUIImage(res);
+}
+
 //度数转换
 double DegreeTrans(double theta)
 {
