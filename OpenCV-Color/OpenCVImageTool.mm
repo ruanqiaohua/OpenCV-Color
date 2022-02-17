@@ -92,7 +92,6 @@ using namespace cv;
     Mat img, grayImg, res;
     UIImageToMat(originImage, img);
     
-    // 灰度化
     cvtColor(img, grayImg, CV_BGR2YCrCb);
 
     vector<Mat> channels;
@@ -108,6 +107,42 @@ using namespace cv;
     cvtColor(grayImg, res, CV_YCrCb2BGR);
 
     return MatToUIImage(res);
+}
+
++ (NSArray *)getRectanglePoints:(UIImage *)originImage {
+    
+    Mat img, grayPic, binPic, cannyPic, res;
+    UIImageToMat(originImage, img);
+    // 灰度化
+    cvtColor(img, grayPic, COLOR_BGR2GRAY);
+    // 中值滤波
+    medianBlur(grayPic, grayPic, 7);
+    // 转为二值图片
+    threshold(grayPic, binPic, 80, 255, THRESH_BINARY);
+    // Canny边缘检测
+    Canny(binPic, cannyPic, 200, 200*2.5);
+    // 获取轮廓
+    vector<vector<cv::Point>> contours;
+    findContours(cannyPic, contours, RETR_CCOMP, CHAIN_APPROX_SIMPLE);
+    // 获取最大的矩形
+    vector<vector<cv::Point>> polyContours(contours.size());
+    int maxArea = 0;
+    for (int index = 0; index < contours.size(); index++){
+        if (contourArea(contours[index]) > contourArea(contours[maxArea]))
+            maxArea = index;
+        approxPolyDP(contours[index], polyContours[index], 10, true);
+    }
+    // 获取顶点
+    vector<int> hull;
+    convexHull(polyContours[maxArea], hull, false);
+    
+    NSMutableArray *points = [NSMutableArray array];
+    for (int i = 0; i < hull.size(); ++i){
+        cv::Point point = polyContours[maxArea][i];
+        CGPoint cgPoint = CGPointMake(point.x, point.y);
+        [points addObject:NSStringFromCGPoint(cgPoint)];
+    }
+    return points;
 }
 
 //度数转换

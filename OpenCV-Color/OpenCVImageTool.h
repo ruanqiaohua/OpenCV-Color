@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)addLightImage:(UIImage *)originImage;
 /// 对比度
 + (UIImage *)addHstackImage:(UIImage *)originImage;
+/// 获取矩形Points
++ (NSArray *)getRectanglePoints:(UIImage *)originImage;
 
 @end
 

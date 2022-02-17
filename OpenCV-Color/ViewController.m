@@ -68,6 +68,24 @@
     _outputImageView.image = image;
 }
 
+- (IBAction)rectangleBtnClick:(id)sender {
+    
+    if (!_inputImageView.image) return;
+
+    _outputImageView.image = _inputImageView.image;
+
+    NSArray *points = [OpenCVImageTool getRectanglePoints:_inputImageView.image];
+    
+    for (NSString *value in points) {
+        CGPoint point = CGPointFromString(value);
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+        CGFloat scaleX = _inputImageView.frame.size.width / _inputImageView.image.size.width;
+        CGFloat scaleY = _inputImageView.frame.size.height / _inputImageView.image.size.height;
+        btn.center = CGPointMake(point.x * scaleX, point.y * scaleY);
+        [_outputImageView addSubview:btn];
+    }
+}
+
 #pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info {
