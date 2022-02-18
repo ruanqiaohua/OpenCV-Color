@@ -79,7 +79,12 @@
 
     NSArray *points = [OpenCVImageTool getRectanglePoints:_image];
     
-    for (NSString *value in points) {
+    if (points.count < 4 || points.count > 5) {
+        return;
+    }
+    
+    for (int i=0; i<4; i++) {
+        NSString *value = points[i];
         CGPoint point = CGPointFromString(value);
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
         CGFloat scaleX = _inputImageView.frame.size.width / _inputImageView.image.size.width;
