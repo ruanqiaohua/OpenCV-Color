@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "OpenCVImageTool.h"
+#import "UIImage+FixOrientation.h"
 
 @interface ViewController ()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UIImageView *inputImageView;
 
 @property (nonatomic, weak) IBOutlet UIImageView *outputImageView;
+
+@property (nonatomic, strong) UIImage *image;
 
 @end
 
@@ -72,9 +75,9 @@
     
     if (!_inputImageView.image) return;
 
-    _outputImageView.image = _inputImageView.image;
+    _outputImageView.image = _image;
 
-    NSArray *points = [OpenCVImageTool getRectanglePoints:_inputImageView.image];
+    NSArray *points = [OpenCVImageTool getRectanglePoints:_image];
     
     for (NSString *value in points) {
         CGPoint point = CGPointFromString(value);
@@ -94,7 +97,8 @@
     
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     if (image) {
-        _inputImageView.image = image;
+        _image = [image fixOrientation];
+        _inputImageView.image = _image;
     }
 }
 

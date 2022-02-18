@@ -3,6 +3,7 @@ platform :ios, '9.0'
 
 target 'OpenCV-Color' do
   pod 'OpenCV'
+  pod 'UIImage+FixOrientation'
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

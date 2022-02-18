@@ -118,6 +118,7 @@
 				F1BF8FC7239DE1DC003B9DFA /* Sources */,
 				F1BF8FC8239DE1DC003B9DFA /* Frameworks */,
 				F1BF8FC9239DE1DC003B9DFA /* Resources */,
+				01DCC172957035E39A313E4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +175,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01DCC172957035E39A313E4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCV-Color/Pods-OpenCV-Color-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenCV-Color/Pods-OpenCV-Color-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenCV-Color/Pods-OpenCV-Color-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C2343D7C9552EA71AD4E7331 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

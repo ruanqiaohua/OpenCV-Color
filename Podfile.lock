@@ -1,16 +1,20 @@
 PODS:
   - OpenCV (4.1.0)
+  - "UIImage+FixOrientation (1.0.0)"
 
 DEPENDENCIES:
   - OpenCV
+  - "UIImage+FixOrientation"
 
 SPEC REPOS:
   trunk:
     - OpenCV
+    - "UIImage+FixOrientation"
 
 SPEC CHECKSUMS:
   OpenCV: 52cd4d72ff29e2be83421477aec5447320b7fb19
+  "UIImage+FixOrientation": 6889ce14a2761462c22d6f92d26685db79a0c9b2
 
-PODFILE CHECKSUM: b946194872b6af12799e7fb3d7e67dc377df075c
+PODFILE CHECKSUM: 5d1155286209a91f7dda789bef70a87d3eee23bc
 
 COCOAPODS: 1.11.2

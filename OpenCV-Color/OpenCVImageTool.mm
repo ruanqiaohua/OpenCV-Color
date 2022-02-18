@@ -110,17 +110,21 @@ using namespace cv;
 }
 
 + (NSArray *)getRectanglePoints:(UIImage *)originImage {
-    
+
     Mat img, grayPic, binPic, cannyPic, res;
     UIImageToMat(originImage, img);
     // 灰度化
     cvtColor(img, grayPic, COLOR_BGR2GRAY);
-    // 中值滤波
-    medianBlur(grayPic, grayPic, 7);
-    // 转为二值图片
-    threshold(grayPic, binPic, 80, 255, THRESH_BINARY);
+    // 高斯滤波
+    GaussianBlur(grayPic, binPic, cv::Size(5, 5), 0, 0);
+//    // 转为二值图片
+//    threshold(grayPic, binPic, 80, 255, THRESH_BINARY);
+    //获取自定义核
+    Mat element = getStructuringElement(MORPH_RECT, cv::Size(3, 3)); //第一个参数MORPH_RECT表示矩形的卷积核，当然还可以选择椭圆形的、交叉型的
+    //膨胀操作
+    dilate(binPic, binPic, element);
     // Canny边缘检测
-    Canny(binPic, cannyPic, 200, 200*2.5);
+    Canny(binPic, cannyPic, 30, 120, 3);
     // 获取轮廓
     vector<vector<cv::Point>> contours;
     findContours(cannyPic, contours, RETR_CCOMP, CHAIN_APPROX_SIMPLE);
